@@ -13,6 +13,20 @@ Route::get('/hitungtarif', function () {
     return view('hitungtarif');
 });
 
+// Route untuk download user manual
+Route::get('/download-manual', function () {
+    $filePath = public_path('User Manual Aplikasi hitung tarif .pdf');
+    
+    if (!file_exists($filePath)) {
+        abort(404, 'File tidak ditemukan');
+    }
+    
+    return response()->download($filePath, 'User Manual Aplikasi Hitung Tarif.pdf', [
+        'Content-Type' => 'application/pdf',
+        'Content-Disposition' => 'attachment; filename="User Manual Aplikasi Hitung Tarif.pdf"'
+    ]);
+})->name('download.manual');
+
 // Debug route
 Route::get('/debug-ahp', function () {
     $kota = App\Models\Kota::all();

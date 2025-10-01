@@ -333,6 +333,14 @@
 
     <footer class="text-center py-4">
         <p>&copy; 2025 AppKu. All Rights Reserved.</p>
+        <div class="mt-2">
+            <a href="{{ route('download.manual') }}" 
+               class="text-decoration-none" 
+               style="font-size: 0.85rem; color: #64ffda; opacity: 0.9;"
+               title="Download User Manual">
+                <i class="fas fa-question-circle me-1"></i>Bantuan
+            </a>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

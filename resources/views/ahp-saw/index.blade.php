@@ -175,6 +175,12 @@
             </div>
             <div class="col-md-6 text-end">
                 <span class="text-muted">Data kota dikelola oleh admin</span>
+                <a href="{{ route('download.manual') }}" 
+                   class="text-decoration-none ms-3" 
+                   style="font-size: 0.9rem; color: #64ffda; opacity: 0.9;"
+                   title="Download User Manual">
+                    <i class="fas fa-question-circle me-1"></i>Bantuan
+                </a>
             </div>
         </div>
 
