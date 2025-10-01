@@ -1,0 +1,35 @@
+,,,,,,Hasil Normalisasi Matriks Keputusan,,,,,,Hasil Perhitungan Rinci dan Perangkingan,,,,,,,,,,
+Alternatif,C1: UMR (IDR) / Tarif minimum ojol,C2: Waktu Tempuh (detik),C3: Armada Online,C4: Kendaraan Pribadi (unit) tahun 2024/2025,,,,,,,,,,,,,,,,,,
+A1: Bandung,526,1957,30000,"2,360,000",,Column 1,Benefit,Cost,Benefit,Cost,,,,,,,,,,,,
+A2: Medan,471,1923,2000,"3,690,000",,Alternatif,C1 (Keterjangkauan/UMR),C2 (Waktu Tempuh) Detik,C3 (Jumlah Armada),C4 (Jumlah Kendaraan Pribadi),,Alternatif,Skor Preferensi Akhir (Vi),Peringkat,Bandung sebagai Acuan,Jakarta sebagai Acuan,Harga Minimum Aktual,,Alternatif,Skor Preferensi Akhir (Vi),Harga Minimum Rekomendasi,Harga Minimum Aktual
+A3: Palembang,460,1675,25000,"1,640,000",,A1: Bandung,0.89,0.78,0.030,0.69,,A1: Bandung,0.591,4,8000,6912.729484,8000,,A1: Bandung,0.591,"6,912.73","8,000.00"
+A4: Surabaya,591,1619,15350,"3,810,000",,A2: Medan,0.80,0.80,0.002,0.44,,A2: Medan,0.540,5,7315.486979,6321.247816,8000,,A2: Medan,0.540,"6,321.25","8,000.00"
+A5: Jakarta,514,1531,1000000,"24,356,669",,A3: Palembang,0.78,0.91,0.025,1.00,,A3: Palembang,0.614,3,8310.392127,7180.936585,8000,,A3: Palembang,0.614,"7,180.94","8,000.00"
+,,,,,,A4: Surabaya,1.00,0.95,0.015,0.43,,A4: Surabaya,0.656,2,8888.213284,7680.226754,8000,,A4: Surabaya,0.656,"7,680.23","8,000.00"
+,,,,,,A5: Jakarta,0.87,1.00,1.000,0.07,,A5: Jakarta,0.897,1,12151.49532,10500,10500,,A5: Jakarta,0.897,"10,500.00","10,500.00"
+,,,,,,,,,,,,,,,,,,,,,,
+Normalisasi Matriks Keputusan,,,,Perhitungan Rinci Nilai Preferensi,,,,,,,,,,,,,,,,,,
+C1(Benefit),max = 591,,,V(Bandung),,,,,,,,,,,,,,,,,,
+,A1(Bandung) 526 / 591 =,0.891,,v1 = (0.33×0.89)+(0.31×0.78)+(0.29×0.3)+(0.06×0.69),,,,,,,,,,City,Minimum Recommended Value,Minimum Actual Value,,City,Minimum Recommended Value,Minimum Actual Value,,
+,A2(Medan) 471 / 591 =,0.798,,0.591,,,,,,,,,,,,,,Bandung,"6,913","8,000",,
+,A3(Palembang) 460 / 591 =,0.778,,V(Medan),,,,,,,,,,Medan,"7,315","8,000",,Medan,"6,321","8,000",,
+,A4(Surabaya) 591/ 591,1.000,,v2 = (0.33×0.80)+(0.31×0.80)+(0.29×0.002)+(0.06×0.44),,,,,,,,,,Palembang,"8,310","8,000",,Palembang,"7,181","8,000",,
+,A5(Jakarta) 514/ 591 =,0.870,,0.540,,,,,,,,,,Surabaya,"8,888","8,000",,Surabaya,"7,680","8,000",,
+C2(Cost),min = 1531,,,V(Palembang),,,,,,,,,,Jakarta,"12,151","10,500",,,,,,
+,A1(Bandung) 1531 / 1957 =,0.782,,v2 = (0.33×0.78)+(0.31×0.91)+(0.29×0.025)+(0.06×1),,,,,,,,,,,,,,,,,,
+,A2(Medan) 1531 / 1923 =,0.796,,0.614,,,,,,,,,,,,,,,,,,
+,A3(Palembang) 1531 / 1675 =,0.914,,V(Surabaya),,,,,,,,,,,,,,,,,,
+,A4(Surabaya) 1531/ 1619,0.946,,v2 = (0.33×1)+(0.31×0.95)+(0.29×0.015)+(0.06×0.43),,,,,,,,,,,,,,,,,,
+,A5(Jakarta) 1531/ 1531 =,1.000,,0.656,,,,,,,,,,,,,,,,,,
+C3(Benefit),max = 1000000,,,V(Jakarta),,,,,,,,,,,,,,,,,,
+,A1(Bandung) 30000 / 1000000 =,0.030,,v2 = (0.33×0.87)+(0.31×1)+(0.29×1)+(0.06×0.07),,,,,,,,,,,,,,,,,,
+,A2(Medan) 2000 / 1000000 =,0.002,,0.897,,,,,,,,,,,,,,,,,,
+,A3(Palembang) 25000 / 1000000 =,0.025,,,,,,,,,,,,,,,,,,,,
+,A4(Surabaya) 15350/ 1000000,0.015,,,,,,,,,,,,,,,,,,,,
+,A5(Jakarta) 1000000/ 1000000 =,1.000,,,,,,,,,,,,,,,,,,,,
+C4(Cost),"min = 1,640,000",,,,,,,,,,,,,,,,,,,,,
+,"A1(Bandung) 1,640,000 / 2,360,000 =",0.695,,,,,,,,,,,,,,,,,,,,
+,"A2(Medan) 1,640,000 / 3,690,000 =",0.444,,,,,,,,,,,,,,,,,,,,
+,"A3(Palembang) 1,640,000 / 1,640,000 =",1.000,,,,,,,,,,,,,,,,,,,,
+,"A4(Surabaya) 1,640,000/ 3,810,000",0.430,,,,,,,,,,,,,,,,,,,,
+,"A5(Jakarta) 1,640,000/ 24,356,669 =",0.067,,,,,,,,,,,,,,,,,,,,
